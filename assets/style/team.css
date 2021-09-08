@@ -6,7 +6,7 @@ main {
 }
 
 section.page-team__content {
-  padding-top: 60px;
+  padding-top: 80px;
   margin-bottom: 100px;
 }
 
@@ -22,8 +22,12 @@ section.page-team__content {
   margin-bottom: 1%;
 }
 
+.team__item .block__img {
+  background-color: #f7574b;
+}
+
 .team__item:nth-child(3n + 2) {
-  margin-top: 9%;
+  margin-top: 3.5%;
 }
 
 .team__item .name {
