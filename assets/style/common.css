@@ -110,6 +110,10 @@ header {
   background-position: 0 100%;
   background-size: 100% 1px;
 }
+
+.menu-sp {
+  display: none;
+}
 /* ========end-style-header======== */
 
 /* =========footer========= */
@@ -316,6 +320,9 @@ footer {
 }
 /* =========end-footer========= */
 
+
+
+
 /* =========responsive========= */
 
 @media only screen and (max-width: 840px) {
@@ -325,12 +332,14 @@ footer {
   .header__nav {
     display: none;
   }
+  
   .header__logo a svg,
   .header__logo a img {
     width: 140px;
   }
   .menu-sp {
     cursor: pointer;
+    display: block;
   }
   .menu-sp:hover .show .icon-show span {
     background-color: #f7574b;
