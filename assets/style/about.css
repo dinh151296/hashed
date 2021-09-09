@@ -102,3 +102,51 @@ main {
   font-size: 31.25px;
   font-weight: 600;
 }
+
+
+/* ======responsive====== */
+
+@media only screen and (max-width: 840px) {
+  main {
+    padding-top: 4%;
+    margin-bottom: 60px;
+  }
+  .about__title {
+    min-width: auto;
+    width: 100%;
+    padding-right: 8.3%;
+  }
+  .about__title h2 {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+  .about__desc {
+    padding-top: 60px;
+    flex-wrap: wrap;
+  }
+  .about__left {
+    width: 100%;
+    position: relative;
+  }
+  .about__left li a {
+    font-size: 16px;
+  }
+  .about__left li span {
+    margin-right: 10px;
+  }
+  .about__text {
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about__text-item p  {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  .about__text-item h4 {
+    font-size: 25px;
+    padding: 15px 0px;
+  }
+}

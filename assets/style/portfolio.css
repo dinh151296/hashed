@@ -91,16 +91,6 @@ span.portfolio__item-title {
 	animation-fill-mode: forwards;
 }
 
-/* .portfolio__hover:hover .portfolio__desc {
-  opacity: 1;
-  visibility: visible;
-
-  -webkit-animation: fadeIn 0.75s 1;
-	animation: fadeIn 0.75s 1;
-	-webkit-animation-fill-mode: forwards;
-	animation-fill-mode: forwards;
-} */
-
 .portfolio__desc .inner {
   opacity: 1;
   margin-left: 12.5%;
@@ -243,4 +233,32 @@ span.portfolio__item-title {
   background-position: 100% 100%;
   background-size: 0 1px;
   color: #f7574b;
+}
+
+.sp-only {
+  display: none;
+}
+/* =========responsive========= */
+
+@media only screen and (max-width: 850px) {
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  main {
+    padding-top: 45px;
+  }
+  h2.portfolio__title {
+    font-size: calc(16px + 4*(100vw - 425px)/1015);
+    width: 100%;
+    text-align: left;
+    padding: 20px 0px;
+  }
+  .portfolio__name {
+    width: 100%;
+    text-align: left;
+  }
+  
 }

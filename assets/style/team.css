@@ -72,3 +72,43 @@ section.page-team__content {
   font-size: 16px;
   color: #000;
 }
+
+
+/* =========responsive========= */
+
+@media only screen and (max-width: 1024px) {
+  .team__item {
+    padding: 3.5%;
+  }
+  section.page-team__content {
+    padding-top: 60px;
+  }
+  .team__item:nth-child(3n + 2) {
+    margin-top: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 840px) {
+  .team__item {
+    width: 50%;
+    padding: 6%;
+    margin-bottom: 0px;
+  }
+  .team__item .name, .team__item .position {
+    font-size: 16px;
+  }
+  .team__item .desc p {
+    font-size: 13.5px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .team__item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15%;
+  }
+  
+}
