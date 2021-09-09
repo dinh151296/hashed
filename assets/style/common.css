@@ -63,7 +63,12 @@ header {
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.header__logo {
+  display: flex;
+  align-items:center;
 }
 
 .header__logo a svg,
@@ -74,6 +79,18 @@ header {
 
 .header__logo a:hover svg {
   fill: #f7574b;
+}
+
+.header__logo > p {
+  font-size: calc(12.8px + 3.2*(100vw - 425px)/1015);
+  color: #000;
+  font-weight: 500;
+  margin-left: 20px;
+  max-width: 45%;
+}
+
+.header__nav {
+  margin-top: 10px;
 }
 
 .header__nav ul {
@@ -324,6 +341,22 @@ footer {
 
 /* =========responsive========= */
 
+@media only screen and (max-width: 1125px) {
+  header {
+    align-items: flex-start;
+  }
+  .header__logo {
+    flex-wrap: wrap;
+  }
+  .header__logo > p {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 16px;
+    padding-right: 30%;
+  }
+}
+
 @media only screen and (max-width: 840px) {
   html, body {
     overflow-x: hidden;
@@ -341,9 +374,14 @@ footer {
   .header__logo a img {
     width: 140px;
   }
+  .header__logo > p {
+    max-width: 100%;
+    padding-right: 20%;
+  }
   .menu-sp {
     cursor: pointer;
     display: block;
+    margin-top: 10px;
 
     position: relative;
   }
